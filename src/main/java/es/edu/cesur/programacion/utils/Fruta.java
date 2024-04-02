@@ -2,7 +2,7 @@ package es.edu.cesur.programacion.utils;
 
 import java.util.Objects;
 
-public class Fruta  implements Comparable<Fruta>{
+public class Fruta implements Comparable<Fruta> {
 	private String nombre;
 	private String origen;
 
@@ -10,6 +10,14 @@ public class Fruta  implements Comparable<Fruta>{
 		super();
 		this.nombre = nombre;
 		this.origen = origen;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getOrigen() {
+		return origen;
 	}
 
 	@Override

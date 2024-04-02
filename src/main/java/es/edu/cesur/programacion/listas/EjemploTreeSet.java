@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
+import es.edu.cesur.programacion.comparators.LongitudStringComparator;
 import es.edu.cesur.programacion.utils.Fruta;
 
 public class EjemploTreeSet {
@@ -14,7 +15,7 @@ public class EjemploTreeSet {
 		Fruta manzana = new Fruta("Manzana", "Asturias");
 		Fruta fresaImportada = new Fruta("Fresa", "Huelva");
 
-		Set<Fruta> listaFrutas = new TreeSet<>();
+		Set<Fruta> listaFrutas = new TreeSet<>(new LongitudStringComparator());
 		listaFrutas.add(fresaNacional);
 		listaFrutas.add(pera);
 		listaFrutas.add(manzana);
