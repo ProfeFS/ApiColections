@@ -1,13 +1,12 @@
 package es.edu.cesur.programacion.listas;
 
-import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-import es.edu.cesur.programacion.comparators.LongitudStringComparator;
+import es.edu.cesur.programacion.comparators.LongitudNombreFrutaComparator;
 import es.edu.cesur.programacion.utils.Fruta;
 
-public class EjemploTreeSet {
+public class EjemploTreeSetOrdenPorLongitud {
 
 	public static void main(String[] args) {
 		Fruta fresaNacional = new Fruta("Fresa", "Huelva");
@@ -15,7 +14,7 @@ public class EjemploTreeSet {
 		Fruta manzana = new Fruta("Manzana", "Asturias");
 		Fruta fresaImportada = new Fruta("Fresa", "Huelva");
 
-		Set<Fruta> listaFrutas = new TreeSet<>();
+		Set<Fruta> listaFrutas = new TreeSet<>(new LongitudNombreFrutaComparator());
 		listaFrutas.add(fresaNacional);
 		listaFrutas.add(pera);
 		listaFrutas.add(manzana);
