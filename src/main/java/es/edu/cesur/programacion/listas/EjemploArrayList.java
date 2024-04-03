@@ -19,12 +19,21 @@ public class EjemploArrayList {
 		listaFrutas.add(pera);
 		listaFrutas.add(manzana);
 		listaFrutas.add(fresaImportada);
+		
+		listaFrutas.add(new Fruta("Quiwi", "Madrid"));
 
 		for (Fruta fruit : listaFrutas) {
 			System.out.println(fruit);		
 		}
+		
+		listaFrutas.remove(4);
+		
+		System.out.println("-----------------------\r" );
+		for (Fruta fruit : listaFrutas) {
+			System.out.println(fruit);		
+		}
 
-		System.out.println("-----------------------\r" + listaFrutas.get(1));
+		System.out.println("-----------------------\r");
 	}
 
 }

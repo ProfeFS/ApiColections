@@ -12,7 +12,7 @@ public class EjemploTreeSetOrdenPorLongitud {
 		Fruta fresaNacional = new Fruta("Fresa", "Huelva");
 		Fruta pera = new Fruta("Pera", "Madrid");
 		Fruta manzana = new Fruta("Manzana", "Asturias");
-		Fruta fresaImportada = new Fruta("Fresa", "Huelva");
+		Fruta fresaImportada = new Fruta("fresa", "Huelva");
 
 		Set<Fruta> listaFrutas = new TreeSet<>(new LongitudNombreFrutaComparator());
 		listaFrutas.add(fresaNacional);

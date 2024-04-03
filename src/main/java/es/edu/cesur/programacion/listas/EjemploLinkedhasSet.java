@@ -1,7 +1,9 @@
 package es.edu.cesur.programacion.listas;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 
 import es.edu.cesur.programacion.utils.Fruta;

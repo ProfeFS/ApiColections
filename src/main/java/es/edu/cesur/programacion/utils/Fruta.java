@@ -40,32 +40,37 @@ public class Fruta implements Comparable<Fruta> {
 
 		// Comprobación de igualdad de campos relevantes
 		// Comprobación de igualdad considerando mayúsculas/minúsculas
-        // Se verifica primero si alguno de los campos es null para evitar NullPointerException
-        boolean nombreIgual = (nombre == null && fruta.nombre == null) || 
-                              (nombre != null && fruta.nombre != null && nombre.equalsIgnoreCase(fruta.nombre));
-        boolean origenIgual = (origen == null && fruta.origen == null) || 
-                              (origen != null && fruta.origen != null && origen.equalsIgnoreCase(fruta.origen));
+		// Se verifica primero si alguno de los campos es null para evitar
+		// NullPointerException
+		Boolean nombresIguales = (nombre == null && fruta.getNombre() == null) ||
+				(nombre != null && fruta.getNombre() != null && TextUtil.normalizarTexto(nombre).equalsIgnoreCase(TextUtil.normalizarTexto(fruta.getNombre())));
 
-        return nombreIgual && origenIgual;
+		Boolean origenIguales = (origen == null && fruta.getOrigen() == null) || (origen != null
+				&& fruta.getOrigen() != null
+				&& TextUtil.normalizarTexto(origen).equalsIgnoreCase(TextUtil.normalizarTexto(fruta.getOrigen())));
+
+		return nombresIguales && origenIguales;
 	}
 
 	@Override
 	public int hashCode() {
 		// Para mantener la consistencia con equals ignorando mayúsculas y minúsculas,
-        // se podría convertir a minúsculas o mayúsculas ambos campos antes de calcular el hash.
-        // Se usa null-safe operation usando Objects.hashCode() en campos transformados a minúsculas.
-        return Objects.hash(nombre != null ? nombre.toLowerCase() : null, 
-                            origen != null ? origen.toLowerCase() : null);
+		// se podría convertir a minúsculas o mayúsculas ambos campos antes de calcular
+		// el hash.
+		// Se usa null-safe operation usando Objects.hashCode() en campos transformados
+		// a minúsculas.
+		return Objects.hash(nombre != null ? TextUtil.normalizarTexto(nombre) : null,
+				origen != null ? TextUtil.normalizarTexto(origen) : null);
 	}
 
 	@Override
 	public int compareTo(Fruta otraFruta) {
-		int comparacionNombres = this.nombre.compareToIgnoreCase(otraFruta.nombre);
-		if (comparacionNombres != 0) {
-			return comparacionNombres;
-		} else {
-			return this.origen.compareToIgnoreCase(otraFruta.origen);
-		}
+		int comparacionNombres = TextUtil.normalizarTexto(nombre).compareToIgnoreCase(TextUtil.normalizarTexto(otraFruta.getNombre()));
+        if (comparacionNombres != 0) {
+            return comparacionNombres;
+        } else {
+            return TextUtil.normalizarTexto(origen).compareToIgnoreCase(TextUtil.normalizarTexto(otraFruta.getOrigen()));
+        }
 	}
 
 	/*

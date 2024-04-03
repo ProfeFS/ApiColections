@@ -10,7 +10,7 @@ public class EjemploTreeSet {
 		Fruta fresaNacional = new Fruta("Fresa", "Huelva");
 		Fruta pera = new Fruta("Pera", "Madrid");
 		Fruta manzana = new Fruta("Manzana", "Asturias");
-		Fruta fresaImportada = new Fruta("fresa", "Huelva");
+		Fruta fresaImportada = new Fruta("fresá", "Huelva");
 
 		Set<Fruta> listaFrutas = new TreeSet<>();
 		listaFrutas.add(fresaNacional);

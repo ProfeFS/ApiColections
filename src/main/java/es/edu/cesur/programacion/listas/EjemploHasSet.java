@@ -8,7 +8,7 @@ import es.edu.cesur.programacion.utils.Fruta;
 public class EjemploHasSet {
 
 	public static void main(String[] args) {
-		Fruta fresaNacional = new Fruta("Fresa", "Huelva");
+		Fruta fresaNacional = new Fruta("Frésa", "Huelva");
 		Fruta pera = new Fruta("Pera", "Madrid");
 		Fruta manzana = new Fruta("Manzana", "Asturias");
 		Fruta fresaImportada = new Fruta("fresa", "Huelva");
