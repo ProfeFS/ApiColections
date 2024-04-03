@@ -39,23 +39,32 @@ public class Fruta implements Comparable<Fruta> {
 		Fruta fruta = (Fruta) obj;
 
 		// Comprobación de igualdad de campos relevantes
-		// Para esto, se usa Objects.equals(), que maneja nulls automáticamente.
-		return Objects.equals(nombre, fruta.nombre) && Objects.equals(origen, fruta.origen);
+		// Comprobación de igualdad considerando mayúsculas/minúsculas
+        // Se verifica primero si alguno de los campos es null para evitar NullPointerException
+        boolean nombreIgual = (nombre == null && fruta.nombre == null) || 
+                              (nombre != null && fruta.nombre != null && nombre.equalsIgnoreCase(fruta.nombre));
+        boolean origenIgual = (origen == null && fruta.origen == null) || 
+                              (origen != null && fruta.origen != null && origen.equalsIgnoreCase(fruta.origen));
+
+        return nombreIgual && origenIgual;
 	}
 
 	@Override
 	public int hashCode() {
-		// System.out.println(nombre + " HasCode: " + Objects.hash(nombre, origen));
-		return Objects.hash(nombre, origen);
+		// Para mantener la consistencia con equals ignorando mayúsculas y minúsculas,
+        // se podría convertir a minúsculas o mayúsculas ambos campos antes de calcular el hash.
+        // Se usa null-safe operation usando Objects.hashCode() en campos transformados a minúsculas.
+        return Objects.hash(nombre != null ? nombre.toLowerCase() : null, 
+                            origen != null ? origen.toLowerCase() : null);
 	}
 
 	@Override
 	public int compareTo(Fruta otraFruta) {
-		int comparacionNombres = this.nombre.compareTo(otraFruta.nombre);
+		int comparacionNombres = this.nombre.compareToIgnoreCase(otraFruta.nombre);
 		if (comparacionNombres != 0) {
 			return comparacionNombres;
 		} else {
-			return this.origen.compareTo(otraFruta.origen);
+			return this.origen.compareToIgnoreCase(otraFruta.origen);
 		}
 	}
 

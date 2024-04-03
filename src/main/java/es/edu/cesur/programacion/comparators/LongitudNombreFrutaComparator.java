@@ -14,6 +14,6 @@ public class LongitudNombreFrutaComparator implements Comparator<Fruta> {
 			return diferenciaLongitud;
 		}
 		// Si tienen la misma longitud, compara alfabéticamente para garantizar unicidad
-		return fruta1.getNombre().compareTo(fruta2.getNombre());
+		return fruta1.getNombre().compareToIgnoreCase(fruta2.getNombre());
 	}
 }

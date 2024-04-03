@@ -11,7 +11,7 @@ public class EjemploHasSet {
 		Fruta fresaNacional = new Fruta("Fresa", "Huelva");
 		Fruta pera = new Fruta("Pera", "Madrid");
 		Fruta manzana = new Fruta("Manzana", "Asturias");
-		Fruta fresaImportada = new Fruta("Fresa", "Marruecos");
+		Fruta fresaImportada = new Fruta("fresa", "Huelva");
 		Fruta fresaNac = new Fruta("Fresa", "Huelva");
 		Fruta fresaNac2 = fresaNacional;
 

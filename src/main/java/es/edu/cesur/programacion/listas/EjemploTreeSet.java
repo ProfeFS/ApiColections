@@ -1,10 +1,7 @@
 package es.edu.cesur.programacion.listas;
 
-import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
-
-import es.edu.cesur.programacion.comparators.LongitudStringComparator;
 import es.edu.cesur.programacion.utils.Fruta;
 
 public class EjemploTreeSet {
@@ -13,7 +10,7 @@ public class EjemploTreeSet {
 		Fruta fresaNacional = new Fruta("Fresa", "Huelva");
 		Fruta pera = new Fruta("Pera", "Madrid");
 		Fruta manzana = new Fruta("Manzana", "Asturias");
-		Fruta fresaImportada = new Fruta("Fresa", "Huelva");
+		Fruta fresaImportada = new Fruta("fresa", "Huelva");
 
 		Set<Fruta> listaFrutas = new TreeSet<>();
 		listaFrutas.add(fresaNacional);
