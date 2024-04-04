@@ -12,7 +12,7 @@ public class EjemploHasSet {
 		Fruta pera = new Fruta("Pera", "Madrid");
 		Fruta manzana = new Fruta("Manzana", "Asturias");
 		Fruta fresaImportada = new Fruta("fresa", "Huelva");
-		Fruta fresaNac = new Fruta("Fresa", "Huelva");
+		Fruta fresaNac = new Fruta("fresa", "Huelva");
 		Fruta fresaNac2 = fresaNacional;
 
 		Set<Fruta> listaFrutas = new HashSet<>();

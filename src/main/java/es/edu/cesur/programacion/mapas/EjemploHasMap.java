@@ -13,9 +13,14 @@ public class EjemploHasMap {
 		edadeAlumnos.put(TextUtil.normalizarTexto("Iván"), 35);
 		edadeAlumnos.put(TextUtil.normalizarTexto("Carmen"), 30);
 		edadeAlumnos.put(TextUtil.normalizarTexto("Andres"), 30);
+		
+//		edadeAlumnos.put("Andrés", 35);
+//		edadeAlumnos.put("Iván", 35);
+//		edadeAlumnos.put("Carmen", 30);
+//		edadeAlumnos.put("andrés", 30);
 
-		int edad = edadeAlumnos.get(TextUtil.normalizarTexto("Andrés"));
-		System.out.println("La edad de andrés es: " + edad);
+//		int edad = edadeAlumnos.get(TextUtil.normalizarTexto("Andrés"));
+//		System.out.println("La edad de andrés es: " + edad);
 		
 		//Recorrer una mapa
 		for(String clave: edadeAlumnos.keySet() ) {
