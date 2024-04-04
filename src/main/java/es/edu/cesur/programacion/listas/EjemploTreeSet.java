@@ -2,7 +2,8 @@ package es.edu.cesur.programacion.listas;
 
 import java.util.Set;
 import java.util.TreeSet;
-import es.edu.cesur.programacion.utils.Fruta;
+
+import es.edu.cesur.programacion.domain.Fruta;
 
 public class EjemploTreeSet {
 

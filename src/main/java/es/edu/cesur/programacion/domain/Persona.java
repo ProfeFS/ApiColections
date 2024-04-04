@@ -1,4 +1,4 @@
-package es.edu.cesur.programacion.utils;
+package es.edu.cesur.programacion.domain;
 
 public class Persona {
 

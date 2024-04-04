@@ -3,7 +3,7 @@ package es.edu.cesur.programacion.mapas;
 import java.util.HashMap;
 import java.util.Map;
 
-import es.edu.cesur.programacion.utils.Persona;
+import es.edu.cesur.programacion.domain.Persona;
 import es.edu.cesur.programacion.utils.TextUtil;
 
 public class EjemploHasMapPersona {

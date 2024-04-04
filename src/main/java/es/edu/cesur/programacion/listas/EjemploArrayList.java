@@ -2,8 +2,7 @@ package es.edu.cesur.programacion.listas;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import es.edu.cesur.programacion.utils.Fruta;
+import es.edu.cesur.programacion.domain.Fruta;
 
 public class EjemploArrayList {
 

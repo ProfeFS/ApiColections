@@ -3,7 +3,7 @@ package es.edu.cesur.programacion.listas;
 import java.util.HashSet;
 import java.util.Set;
 
-import es.edu.cesur.programacion.utils.Fruta;
+import es.edu.cesur.programacion.domain.Fruta;
 
 public class EjemploHasSet {
 

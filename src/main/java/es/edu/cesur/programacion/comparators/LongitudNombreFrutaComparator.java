@@ -2,7 +2,7 @@ package es.edu.cesur.programacion.comparators;
 
 import java.util.Comparator;
 
-import es.edu.cesur.programacion.utils.Fruta;
+import es.edu.cesur.programacion.domain.Fruta;
 
 public class LongitudNombreFrutaComparator implements Comparator<Fruta> {
 

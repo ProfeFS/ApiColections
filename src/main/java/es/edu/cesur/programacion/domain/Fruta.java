@@ -1,6 +1,8 @@
-package es.edu.cesur.programacion.utils;
+package es.edu.cesur.programacion.domain;
 
 import java.util.Objects;
+
+import es.edu.cesur.programacion.utils.TextUtil;
 
 public class Fruta implements Comparable<Fruta> {
 	private String nombre;

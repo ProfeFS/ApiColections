@@ -6,7 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
-import es.edu.cesur.programacion.utils.Fruta;
+import es.edu.cesur.programacion.domain.Fruta;
 
 public class EjemploLinkedhasSet {
 

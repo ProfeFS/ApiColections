@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import es.edu.cesur.programacion.comparators.LongitudStringComparator;
-import es.edu.cesur.programacion.utils.Persona;
+import es.edu.cesur.programacion.domain.Persona;
 import es.edu.cesur.programacion.utils.TextUtil;
 
 public class EjemploTreeMapPersona {
