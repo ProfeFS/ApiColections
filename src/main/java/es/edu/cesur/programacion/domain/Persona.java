@@ -1,16 +1,20 @@
 package es.edu.cesur.programacion.domain;
 
-public class Persona {
+public class Persona implements Comparable<Persona> {
 
 	private String nombre;
 	private String docIdentidad;
-	private int edad;
+	private Integer edad;
 
-	public Persona(String nombre, String docIdentidad, int edad) {
+	public Persona(String nombre, String docIdentidad, Integer edad) {
 		super();
 		this.nombre = nombre;
 		this.docIdentidad = docIdentidad;
 		this.edad = edad;
+	}
+
+	public int getEdad() {
+		return edad;
 	}
 
 	public String getDocIdentidad() {
@@ -20,6 +24,12 @@ public class Persona {
 	@Override
 	public String toString() {
 		return "Persona [nombre=" + nombre + ", docIdentidad=" + docIdentidad + ", edad=" + edad + "]";
+	}
+
+	@Override
+	public int compareTo(Persona o) {
+
+		return edad.compareTo(o.edad);
 	}
 
 }

@@ -18,18 +18,20 @@ public class EjemploArrayList {
 		listaFrutas.add(pera);
 		listaFrutas.add(manzana);
 		listaFrutas.add(fresaImportada);
-		
+
 		listaFrutas.add(new Fruta("Quiwi", "Madrid"));
+		
+		Fruta f = listaFrutas.get(0);
 
 		for (Fruta fruit : listaFrutas) {
-			System.out.println(fruit);		
+			System.out.println(fruit);
 		}
-		
+
 		listaFrutas.remove(4);
-		
-		System.out.println("-----------------------\r" );
+
+		System.out.println("-----------------------\r");
 		for (Fruta fruit : listaFrutas) {
-			System.out.println(fruit);		
+			System.out.println(fruit);
 		}
 
 		System.out.println("-----------------------\r");
