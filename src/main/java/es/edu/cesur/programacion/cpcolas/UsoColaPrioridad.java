@@ -1,4 +1,4 @@
-package es.edu.cesur.programacion.colas;
+package es.edu.cesur.programacion.cpcolas;
 import java.util.Collections;
 import java.util.PriorityQueue;
 

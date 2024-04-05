@@ -28,7 +28,6 @@ public class Persona implements Comparable<Persona> {
 
 	@Override
 	public int compareTo(Persona o) {
-
 		return edad.compareTo(o.edad);
 	}
 

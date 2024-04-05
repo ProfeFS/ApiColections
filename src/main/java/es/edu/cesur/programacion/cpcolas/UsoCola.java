@@ -1,14 +1,14 @@
-package es.edu.cesur.programacion.colas;
+package es.edu.cesur.programacion.cpcolas;
 
-import java.util.Deque;
 import java.util.LinkedList;
+import java.util.Queue;
 
 import es.edu.cesur.programacion.domain.Persona;
 
 public class UsoCola {
 
 	public static void main(String[] args) {
-		Deque<Persona> colaVentanilla1 = new LinkedList<>(); // (FIFO)
+		Queue<Persona> colaVentanilla1 = new LinkedList<>(); // (FIFO)
 
 		Persona andres = new Persona("Andrés", "Y1234", 35);
 		Persona ivan = new Persona("Iván", "X3423", 25);

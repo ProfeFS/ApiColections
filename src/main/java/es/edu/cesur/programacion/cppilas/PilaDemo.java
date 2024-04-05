@@ -1,4 +1,4 @@
-package es.edu.cesur.programacion.pilas;
+package es.edu.cesur.programacion.cppilas;
 import java.util.Deque;
 import java.util.ArrayDeque;
 

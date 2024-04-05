@@ -1,4 +1,4 @@
-package es.edu.cesur.programacion.pilas;
+package es.edu.cesur.programacion.cppilas;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -11,7 +11,7 @@ public class UsoPilas {
 
 	public static void main(String[] args) {
 
-		Deque<Fruta> pilaFrutas = new ArrayDeque<>();
+		Deque<Fruta> pilaFrutas = new ArrayDeque<>(); //es la implementación más adecuada actual, para pilas.
 
 		Fruta fresa = new Fruta("Frésa", "Huelva");
 		Fruta pera = new Fruta("Pera", "Madrid");
