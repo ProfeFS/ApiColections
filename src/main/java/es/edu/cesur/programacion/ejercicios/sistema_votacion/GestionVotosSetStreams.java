@@ -15,7 +15,7 @@ public class GestionVotosSetStreams {
     public boolean registrarVoto(String electorDocId, String candidato) {
         Voto voto = new Voto(electorDocId, candidato);
         // Verificar si ya existe un voto del elector
-        if (votos.stream().anyMatch(v -> v.getElectorDocId().equals(electorDocId))) {
+        if (votos.stream().anyMatch(v -> v.getElectorDocId().equalsIgnoreCase(electorDocId))) {
             System.out.println("El elector ya ha votado.");
             return false;
         } else {
