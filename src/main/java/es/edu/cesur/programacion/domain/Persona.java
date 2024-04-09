@@ -31,4 +31,9 @@ public class Persona implements Comparable<Persona> {
 		return edad.compareTo(o.edad);
 	}
 
+	public String getNombre() {
+		// TODO Auto-generated method stub
+		return nombre;
+	}
+
 }
