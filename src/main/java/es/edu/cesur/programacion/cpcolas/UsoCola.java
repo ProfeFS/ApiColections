@@ -26,6 +26,8 @@ public class UsoCola {
 			System.out.println("No hay nadie en la cola");
 		}
 		
+		colaVentanilla1.forEach(System.out::println);
+		
 		
 
 	}

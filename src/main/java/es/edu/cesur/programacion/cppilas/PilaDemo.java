@@ -12,11 +12,13 @@ public class PilaDemo {
         pila.push(3);
 
         // Mirando el elemento superior sin removerlo (peek)
-        System.out.println("Elemento en el tope: " + pila.peek());
+       // System.out.println("Elemento en el tope: " + pila.peek());
 
         // Removiendo elementos (pop)
-        while (!pila.isEmpty()) {
-            System.out.println(pila.pop());
-        }
+//        while (!pila.isEmpty()) {
+//            System.out.println(pila.pop());
+//        }
+        
+        pila.forEach(System.out::println);
     }
 }
